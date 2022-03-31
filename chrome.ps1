@@ -1,7 +1,7 @@
 #credits: Mostly to tobibeer and Snak3d0c @ https://stackoverflow.com/questions/47345612/export-chrome-bookmarks-to-csv-file-using-powershell
 #Path to chrome bookmarks
 $user = Read-Host "Enter user"
-$pathToJsonFile = "C:\users\$user\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
+$pathToJsonFile = "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
 
 $htmlOut = 'C:\temp\ChromeBookmarks.html'
 $htmlHeader = @'
